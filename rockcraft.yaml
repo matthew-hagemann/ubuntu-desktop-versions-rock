@@ -1,8 +1,7 @@
 name: ubuntu-desktop-versions-rock
-# see https://documentation.ubuntu.com/rockcraft/en/1.10.0/explanation/bases/
-# for more information about bases and using 'bare' bases for chiselled rocks
-base: ubuntu@24.04 # the base environment for this rock
-version: '0.1' # just for humans. Semantic versioning is recommended
+base: ubuntu@24.04
+version: '0.1'
+license: GPL-2.0
 summary: Single-line elevator pitch for your amazing rock # 79 char long summary
 description: |
     This is ubuntu-desktop-versions-rock's description. You have a paragraph or two to tell the
