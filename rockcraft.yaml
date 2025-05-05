@@ -3,7 +3,7 @@ base: ubuntu@24.04
 version: '0.1'
 license: GPL-2.0
 summary: Apache2 based Rock for serving ubuntu-desktop-versions html content.
-summary: Apache2 based Rock for serving ubuntu-desktop-versions html content.
+description: Apache2 based Rock for serving ubuntu-desktop-versions html content.
 platforms:
     amd64:
 
