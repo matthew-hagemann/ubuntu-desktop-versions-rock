@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches:
+     - "main"
+  pull_request:
+    branches:
+     - "*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # - name: Install dependencies 
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install bzr -y
+
+      - uses: canonical/craft-actions/rockcraft-pack@main
+        id: rockcraft
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: rock
+          path: ${{ steps.rockcraft.outputs.rock }}
