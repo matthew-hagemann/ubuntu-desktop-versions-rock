@@ -2,13 +2,9 @@ name: ubuntu-desktop-versions-rock
 base: ubuntu@24.04
 version: '0.1'
 license: GPL-2.0
-summary: Single-line elevator pitch for your amazing rock # 79 char long summary
-description: |
-    This is ubuntu-desktop-versions-rock's description. You have a paragraph or two to tell the
-    most important story about it. Keep it under 100 words though,
-    we live in tweetspace and your description wants to look good in the
-    container registries out there.
-platforms: # the platforms this rock should be built on and run on
+summary: Apache2 based Rock for serving ubuntu-desktop-versions html content.
+summary: Apache2 based Rock for serving ubuntu-desktop-versions html content.
+platforms:
     amd64:
 
 parts:
