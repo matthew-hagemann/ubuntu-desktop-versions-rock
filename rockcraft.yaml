@@ -8,5 +8,15 @@ platforms:
     amd64:
 
 parts:
-    my-part:
-        plugin: nil
+  apache2-setup:
+    plugin: dump
+    source: ./ubuntu-desktop-versions
+    source-type: local
+    build-packages:
+      - apache2
+    overlay-packages:
+      - apache2
+    overlay-script: |
+      craftctl default
+      rm -f $CRAFT_OVERLAY/var/www/html/index.html
+
