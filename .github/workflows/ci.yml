@@ -16,10 +16,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # - name: Install dependencies 
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install bzr -y
+      - name: Clone Launchpad repo
+        run: git clone https://git.launchpad.net/ubuntu-desktop-versions ubuntu-desktop-versions
 
       - uses: canonical/craft-actions/rockcraft-pack@main
         id: rockcraft
