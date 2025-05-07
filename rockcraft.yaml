@@ -25,5 +25,7 @@ parts:
     overlay-script: |
       craftctl default
       rm -f $CRAFT_OVERLAY/var/www/html/index.html
-
+      install -Dm755 \
+        $CRAFT_PROJECT_DIR/run_versions.sh \
+        $CRAFT_OVERLAY/run_versions.sh
 
